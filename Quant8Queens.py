@@ -44,3 +44,5 @@ def get_mixer_operator_circuit(G, beta):
 qc2 = get_mixer_operator_circuit(G, np.pi/3)
 qc2.draw()
 
+def get_qaoa_circuit(G, beta, gamma):
+    assert(len(beta) == len(gamma))
